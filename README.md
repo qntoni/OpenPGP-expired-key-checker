@@ -59,7 +59,7 @@ cd multiple/
 ./gpg_delete_imports.sh
 ```
 
-You want to see if one of your existing key is not expired
+You want to see if one of your existing key is not expired, 
 
 - To check if your keys pair is not expired
 ```bash
