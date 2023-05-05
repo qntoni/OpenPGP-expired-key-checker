@@ -39,7 +39,7 @@ chmod +x multiple/gpg_delete_imports.sh multiple/gpg_check_private_keys.sh multi
 
 5. Run the scripts 
 
-1. You have to check the validity of tons of keys? You will need to search inside `./multiple/`
+You have to check the validity of tons of keys? You will need to search inside `./multiple/`
 
 - To check public keys
 ```bash
@@ -59,7 +59,7 @@ cd multiple/
 ./gpg_delete_imports.sh
 ```
 
-2. You want to see if one of your existing key is not expired
+You want to see if one of your existing key is not expired
 
 - To check if your keys pair is not expired
 ```bash
