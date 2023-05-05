@@ -8,7 +8,7 @@ gpg --batch --yes --delete-secret-keys $(gpg --list-secret-keys --with-colons | 
 
 # For loop to check all the private keys
 for key_file in "$KEYS_DIR"/*private.key; do
-    echo "Vérification de la clé: $key_file"
+    echo "Verifying the key: $key_file"
 
     # Import the GPG key
     import_output=$(gpg --import "$key_file" 2>&1)

@@ -8,7 +8,7 @@ gpg --batch --yes --delete-keys $(gpg --list-keys --with-colons | awk -F: '/^pub
 
 # for loop to check all the public keys
 for key_file in "$KEYS_DIR"/*public.key; do
-    echo "Vérification de la clé: $key_file"
+    echo "Verifying the key: $key_file"
 
     # Importe la clé GPG
     import_output=$(gpg --import "$key_file" 2>&1)
