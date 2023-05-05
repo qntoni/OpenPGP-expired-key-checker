@@ -32,27 +32,41 @@ cd OpenPGP-expired-key-checker
 
 3. Make sure the scripts are executable
 ```bash
-chmod +x gpg_delete_imports.sh gpg_check_private_keys.sh gpg_check_public_keys.sh
+chmod +x multiple/gpg_delete_imports.sh multiple/gpg_check_private_keys.sh multiple/gpg_check_public_keys.sh single/gpg_check_with_email.sh
 ```
 
-4. Update the `KEYS_DIR` variable in both gpg_check_public_keys.sh and gpg_check_private_keys.sh to point to your directory containing the GPG keys.
+4. Update the `KEYS_DIR` variable in both `multiple/gpg_check_public_keys.sh` and `multiple/gpg_check_private_keys.sh` to point to your directory containing the GPG keys.
 
 5. Run the scripts 
 
+1. You have to check the validity of tons of keys? You will need to search inside `./multiple/`
+
 - To check public keys
 ```bash
+cd multiple/
 ./gpg_check_public_keys.sh
 ```
 
 - To check private keys
 ```bash
+cd multiple/
 ./gpg_check_private_keys.sh
 ```
 
 - To delete imported keys
 ```bash
+cd multiple/
 ./gpg_delete_imports.sh
 ```
+
+2. You want to see if one of your existing key is not expired
+
+- To check if your keys pair is not expired
+```bash
+cd single/
+./gpg_check_with_email.sh
+```
+
 
 ## Contributing
 All contributions are welcome to improve and expand the functionality of `OpenPGP Expired Key Checker`. Please submit a pull request or create an issue if you have any suggestions, bug reports, or feature requests. All commits must be signed with OpenPGP ⚠️
