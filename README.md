@@ -2,7 +2,11 @@
 
 This repository contains a set of shell scripts to help you check the usability of your OpenPGP keys, both public and private. It is useful for identifying expired or otherwise unusable keys, which could save you time when managing a large number of keys.
 
-## Why ?
+## Why is this tool needed ?
+
+When working with a large number of OpenPGP keys, such as in the [passbolt-test-data](https://github.com/passbolt/passbolt-test-data) GitHub repository, it can be challenging and time-consuming to manually verify the validity of each key. Some keys might be expired or otherwise unusable, which could lead to issues when using them in encryption or decryption processes.
+
+This is where the OpenPGP Expired Key Checker comes in handy. Instead of going through each key one by one, this tool provides an automated solution to verify the validity of hundreds of keys at once. By utilizing shell scripts, it streamlines the process of checking key usability and identifies any expired or unusable keys. This not only saves you valuable time but also helps ensure the reliability and security of your key management tasks.
 
 ## Features
 - Check the usability of public and private keys
