@@ -1,6 +1,6 @@
 # OpenPGP Expired Key Checker
 
-This repository contains a set of shell scripts to help you check the usability of your OpenPGP keys, both public and private. It is useful for identifying expired or otherwise unusable keys, which could save you time when managing a large number of keys.
+This repository contains a set of shell scripts to help you check the usability of your OpenPGP keys, both public and private. It is useful for identifying expired or otherwise unusable keys, which could save you time when managing a large number of keys. It's 100% open-source.
 
 ## Why is this tool needed ?
 
